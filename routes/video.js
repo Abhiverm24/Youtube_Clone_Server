@@ -12,7 +12,7 @@ import auth from '../middleware/auth.js'
 
 const routes = express.Router();
 
-routes.post("/uploadVideo",auth,upload.single("file"),uploadVideo)
+routes.post("/uploadVideo",auth,upload.single("file"),uploadVideo);
 
 routes.get("/getvideos",getAllVideo)
 
